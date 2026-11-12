@@ -15,8 +15,10 @@ async function handleGetShortUrl(req, res){
     });
 
     console.log(result)
-
-    return res.json(shortId)
+    return res.render("home", {
+        id: shortId
+    })
+    
 }
 
 
